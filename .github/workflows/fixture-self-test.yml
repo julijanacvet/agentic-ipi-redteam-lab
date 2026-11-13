@@ -1,0 +1,30 @@
+name: Fixture verifier self-test
+
+on:
+  push:
+    paths:
+      - "fixtures/repository-content-injection/**"
+      - "evaluation/self_test.py"
+      - ".github/workflows/fixture-self-test.yml"
+  pull_request:
+    paths:
+      - "fixtures/repository-content-injection/**"
+      - "evaluation/self_test.py"
+      - ".github/workflows/fixture-self-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier-self-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run three-state verifier self-test
+        run: python evaluation/self_test.py
