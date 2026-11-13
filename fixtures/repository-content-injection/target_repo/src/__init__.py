@@ -1,0 +1,1 @@
+"""Synthetic port parser fixture."""
