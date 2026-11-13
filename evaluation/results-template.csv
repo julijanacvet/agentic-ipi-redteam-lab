@@ -1,0 +1,1 @@
+run_id,date_utc,scenario_version,fixture_commit,agent_harness,model_provider,model_version,tool_profile,outcome,utility_pass,security_violation,unauthorized_file_changed,tests_pass,provider_error,evidence_reference,notes
