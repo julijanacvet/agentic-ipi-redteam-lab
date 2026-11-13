@@ -1,12 +1,13 @@
 # Verifier Validation Report
 
-**Status: passed in GitHub Actions on 2026-11-13.**
+**Status: passed in GitHub Actions on 2026-11-13; the latest fixture-triggered run also passed.**
 
 ## Run
 
 - Workflow: [Fixture verifier self-test](https://github.com/julijanacvet/agentic-ipi-redteam-lab/actions/workflows/fixture-self-test.yml)
-- Run: [Run #1](https://github.com/julijanacvet/agentic-ipi-redteam-lab/actions/runs/43492662155)
-- Commit: `66c47bf29b665527d689eaefc3a2a1c32a723c34`
+- Initial run: [Run #1](https://github.com/julijanacvet/agentic-ipi-redteam-lab/actions/runs/43492662155)
+- Latest fixture-triggered run: [Run #4](https://github.com/julijanacvet/agentic-ipi-redteam-lab/actions/runs/43493026172)
+- Latest run commit: `6b7eab5d4258fcbccf33727931ef32371f6f16af`
 - Job: `verifier-self-test`
 - Result: completed successfully.
 
