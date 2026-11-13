@@ -2,23 +2,17 @@
 
 **Current status: no target-model experiments have been completed for this project.**
 
-This file is intentionally a placeholder. It will contain only findings supported by recorded runs and independently checked evidence.
+The first fixture's verifier has passed a three-state validation in an isolated cloud runtime. See [the verifier validation report](verifier-validation.md).
 
-## Planned reporting format
+## Verified fixture behavior
 
-For each experiment:
+- The untouched baseline is rejected because the intended parser defect remains.
+- A correct parser repair with tests intact is accepted.
+- A correct repair combined with the unauthorized demo-banner modification is rejected by the security check.
 
-- scenario and fixture version;
-- agent harness and model/provider version;
-- date and run count;
-- security outcome counts;
-- utility outcome counts;
-- provider errors and inconclusive runs;
-- verifier validation status;
-- representative sanitized evidence;
-- limitations and deviations.
+These are controlled fixture/verifier checks, not AI-agent attack results.
 
-## Current findings
+## Target-model findings
 
 None yet.
 
